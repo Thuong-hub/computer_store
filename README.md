@@ -1,4 +1,4 @@
-# 🖥️ Computer Store – Website bán linh kiện & máy tính
+# Computer Store – Website bán linh kiện & máy tính
 
 Đồ án cuối kỳ: website thương mại điện tử chuyên bán máy tính và linh kiện, gồm **trang mua hàng cho khách** và **trang quản trị cho admin**. Điểm nhấn là công cụ **PC Builder** tự kiểm tra tính tương thích giữa các linh kiện, thanh toán chuyển khoản qua **SePay** và hệ thống **khuyến mãi tự động**.
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Mục lục
+##  Mục lục
 
 - [Tính năng](#-tính-năng)
 - [Công nghệ sử dụng](#-công-nghệ-sử-dụng)
@@ -19,9 +19,9 @@
 
 ---
 
-## ✨ Tính năng
+##  Tính năng
 
-### 👤 Khách hàng
+###  Khách hàng
 - Đăng ký, đăng nhập (JWT), **xác thực email**, **quên / đặt lại mật khẩu** qua email, đổi email có xác nhận
 - Xem danh sách sản phẩm, lọc theo danh mục / thương hiệu, xem chi tiết và thông số kỹ thuật
 - **Giỏ hàng**, **danh sách yêu thích**, đặt hàng và theo dõi đơn hàng
@@ -33,7 +33,7 @@
 - **Chat hỗ trợ** trực tiếp với cửa hàng
 - Quản lý thông tin cá nhân
 
-### 🛠️ Quản trị viên (Admin)
+### Quản trị viên (Admin)
 - **Dashboard** thống kê tổng quan và **báo cáo**
 - Quản lý **sản phẩm**, danh mục, thương hiệu
 - Quản lý **tồn kho** (lịch sử nhập / xuất kho)
@@ -44,7 +44,7 @@
 
 ---
 
-## 🧰 Công nghệ sử dụng
+## Công nghệ sử dụng
 
 | Thành phần | Công nghệ |
 |---|---|
@@ -59,7 +59,7 @@
 
 ---
 
-## 🏗️ Kiến trúc & cấu trúc thư mục
+## Kiến trúc & cấu trúc thư mục
 
 Ứng dụng tách thành 2 phần: frontend Vue giao tiếp với backend Spring Boot qua REST API (`/api/...`). Khi chạy dev, Vite proxy các request `/api` và `/images` sang backend.
 
@@ -90,7 +90,7 @@ computer_store/
 
 ---
 
-## 🗄️ Cơ sở dữ liệu
+## Cơ sở dữ liệu
 
 Gồm khoảng 26 bảng, các nhóm chính:
 
@@ -103,7 +103,7 @@ Gồm khoảng 26 bảng, các nhóm chính:
 
 ---
 
-## 🚀 Hướng dẫn cài đặt & chạy
+## Hướng dẫn cài đặt & chạy
 
 ### Yêu cầu
 - JDK 21
@@ -156,13 +156,13 @@ Dữ liệu trong `database/computer_store.sql` là **dữ liệu mẫu** (tên,
 | Vai trò | Tên đăng nhập | Mật khẩu |
 |---|---|---|
 | Quản trị viên | `admin01` | `Admin@123` |
-| Khách hàng | `user01` | `User@123` |
+| Khách hàng | `user01` | `123456789` |
 
 > Chức năng gửi email (xác thực, quên mật khẩu) chỉ hoạt động khi bạn cấu hình SMTP. Thông tin thanh toán SePay trong dữ liệu mẫu là số tài khoản giả, chỉ để minh họa giao diện.
 
 ---
 
-## ⚙️ Cấu hình
+## Cấu hình
 
 Các thông số chính trong `application.properties`:
 
@@ -181,11 +181,11 @@ Cách đặt cấu hình cá nhân (chọn 1 trong 2):
 1. **Biến môi trường:** đặt `SMTP_USER`, `SMTP_PASSWORD`, `SEPAY_WEBHOOK_SECRET`... trước khi chạy backend.
 2. **File cấu hình riêng:** tạo `backend/config/application.properties` (copy từ file `.example`). Spring Boot tự nạp file này và ưu tiên hơn file mặc định.
 
-> ⚠️ File `backend/config/application.properties` đã được thêm vào `.gitignore`, **không commit** thông tin SMTP / secret thật lên Git.
+>  File `backend/config/application.properties` đã được thêm vào `.gitignore`, **không commit** thông tin SMTP / secret thật lên Git.
 
 ---
 
-## 📸 Ảnh chụp màn hình
+## Ảnh chụp màn hình
 
 > Thêm ảnh vào thư mục `docs/screenshots/` rồi cập nhật đường dẫn bên dưới.
 
@@ -203,7 +203,7 @@ Cách đặt cấu hình cá nhân (chọn 1 trong 2):
 
 ---
 
-## 🔭 Hướng phát triển
+## Hướng phát triển
 
 - Đóng gói bằng Docker / Docker Compose để chạy chỉ với một lệnh
 - Viết thêm unit test và integration test
@@ -212,7 +212,6 @@ Cách đặt cấu hình cá nhân (chọn 1 trong 2):
 
 ---
 
-## 👨‍💻 Tác giả
+## Tác giả
 
-**<Họ và tên>** – Sinh viên <Trường / Ngành>
-📧 <email> · 🔗 [GitHub](https://github.com/<ten-ban>)
+   Nguyễn Ngọc Thương – Sinh viên Cao đẳng Kinh tế TP.HCM / Phát triển web · [GitHub](https://github.com/Thuong-hub)
