@@ -214,4 +214,4 @@ Cách đặt cấu hình cá nhân (chọn 1 trong 2):
 
 ## Tác giả
 
-   Nguyễn Ngọc Thương – Sinh viên Cao đẳng Kinh tế TP.HCM / Phát triển web · [GitHub](https://github.com/Thuong-hub/computer_store)
+   Nguyễn Ngọc Thương – Sinh viên Cao đẳng Kinh tế TP.HCM / Phát triển web · [GitHub](https://github.com/Thuong-hub)
