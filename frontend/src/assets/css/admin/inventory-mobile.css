@@ -1,0 +1,332 @@
+.inventory-mobile-menu-toggle {
+    display: none;
+}
+
+.inventory-page .inventory-products-table td:nth-child(2) strong {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 800px) {
+    .inventory-page .admin-sidebar {
+        position: relative;
+        height: auto;
+        min-height: 0;
+        padding: 16px 20px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .inventory-page .admin-logo {
+        flex: 1 1 auto;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .inventory-page .admin-logo small {
+        margin-top: 3px;
+    }
+
+    .inventory-mobile-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        padding: 10px 13px;
+        min-height: 42px;
+        border: 1px solid #465167;
+        border-radius: 9px;
+        background: #202c40;
+        color: #ffffff;
+        font: inherit;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .inventory-mobile-menu-toggle:focus-visible {
+        outline: 2px solid #fb7185;
+        outline-offset: 3px;
+    }
+
+    .inventory-menu-icon {
+        font-size: 21px;
+        line-height: 1;
+    }
+
+    .inventory-page .admin-sidebar .admin-menu,
+    .inventory-page .admin-sidebar .admin-sidebar-bottom {
+        display: none;
+        width: 100%;
+    }
+
+    .inventory-page .admin-sidebar.is-open .admin-menu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .inventory-page .admin-sidebar.is-open .admin-menu a {
+        min-width: 0;
+        padding: 9px 10px;
+        font-size: 12px;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    .inventory-page .admin-sidebar.is-open .admin-sidebar-bottom {
+        display: grid;
+        gap: 8px;
+        margin-top: 0;
+    }
+
+    .inventory-page .admin-main {
+        padding: 20px 16px 40px;
+    }
+
+    .inventory-page .admin-header {
+        gap: 14px;
+        margin-bottom: 20px;
+    }
+
+    .inventory-page .admin-header h1 {
+        font-size: 24px;
+    }
+
+    .inventory-page .admin-panel {
+        padding: 17px 15px;
+        margin-bottom: 16px;
+    }
+
+    .inventory-page .enh-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .inventory-page .enh-stats article {
+        min-width: 0;
+        padding: 15px 12px;
+        gap: 7px;
+    }
+
+    .inventory-page .enh-stats article span {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .inventory-page .enh-stats article strong {
+        font-size: 21px;
+        overflow-wrap: anywhere;
+    }
+
+    .inventory-page #invValue {
+        font-size: 17px;
+    }
+
+    .inventory-page .enh-heading {
+        align-items: stretch;
+    }
+
+    .inventory-page .enh-controls {
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 8px;
+    }
+
+    .inventory-page .enh-controls input,
+    .inventory-page .enh-controls select {
+        min-width: 0;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .inventory-page .inventory-products-wrap,
+    .inventory-page .inventory-history-wrap {
+        overflow: visible;
+    }
+
+    .inventory-page .inventory-products-table,
+    .inventory-page .inventory-history-table,
+    .inventory-page .inventory-products-table tbody,
+    .inventory-page .inventory-history-table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .inventory-page .inventory-products-table thead,
+    .inventory-page .inventory-history-table thead {
+        display: none;
+    }
+
+    .inventory-page .inventory-products-table tbody,
+    .inventory-page .inventory-history-table tbody {
+        display: grid;
+        gap: 12px;
+    }
+
+    .inventory-page .inventory-products-table tr.inventory-row,
+    .inventory-page .inventory-history-table tr.inventory-history-row {
+        display: grid;
+        min-width: 0;
+        gap: 12px;
+        padding: 15px;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        background: #ffffff;
+    }
+
+    .inventory-page .inventory-products-table tr.inventory-row {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+            "product product"
+            "id status"
+            "price stock"
+            "action action";
+    }
+
+    .inventory-page .inventory-products-table tr.inventory-row td,
+    .inventory-page .inventory-history-table tr.inventory-history-row td {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 0;
+        width: 100%;
+        padding: 0;
+        border: 0;
+        font-size: 13px;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+    }
+
+    .inventory-page .inventory-products-table tr.inventory-row td::before,
+    .inventory-page .inventory-history-table tr.inventory-history-row td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 3px;
+        color: #64748b;
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    .inventory-page .inventory-products-table .inventory-cell-id {
+        grid-area: id;
+    }
+
+    .inventory-page .inventory-products-table .inventory-cell-product {
+        grid-area: product;
+        padding-bottom: 10px !important;
+        border-bottom: 1px solid #eef0f4 !important;
+    }
+
+    .inventory-page .inventory-products-table .inventory-cell-product strong {
+        font-size: 16px;
+        line-height: 1.35;
+        color: #111827;
+    }
+
+    .inventory-page .inventory-products-table .inventory-cell-price {
+        grid-area: price;
+    }
+
+    .inventory-page .inventory-products-table .inventory-cell-stock {
+        grid-area: stock;
+    }
+
+    .inventory-page .inventory-products-table .inventory-cell-status {
+        grid-area: status;
+    }
+
+    .inventory-page .inventory-products-table .inventory-cell-action {
+        grid-area: action;
+    }
+
+    .inventory-page .inventory-products-table .inventory-cell-action::before {
+        display: none !important;
+    }
+
+    .inventory-page .inventory-products-table .inventory-cell-action button {
+        width: 100%;
+        min-height: 44px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .inventory-page .inventory-history-table tr.inventory-history-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "time time"
+            "product action"
+            "delta quantity"
+            "order order"
+            "note note";
+    }
+
+    .inventory-page .inventory-history-table .inventory-history-time {
+        grid-area: time;
+    }
+
+    .inventory-page .inventory-history-table .inventory-history-product {
+        grid-area: product;
+    }
+
+    .inventory-page .inventory-history-table .inventory-history-action {
+        grid-area: action;
+    }
+
+    .inventory-page .inventory-history-table .inventory-history-delta {
+        grid-area: delta;
+    }
+
+    .inventory-page .inventory-history-table .inventory-history-quantity {
+        grid-area: quantity;
+    }
+
+    .inventory-page .inventory-history-table .inventory-history-order {
+        grid-area: order;
+    }
+
+    .inventory-page .inventory-history-table .inventory-history-note {
+        grid-area: note;
+    }
+
+    .inventory-page .inventory-products-table tr.enh-empty-row,
+    .inventory-page .inventory-history-table tr.enh-empty-row {
+        display: block;
+        padding: 15px;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+    }
+
+    .inventory-page .inventory-products-table tr.enh-empty-row td,
+    .inventory-page .inventory-history-table tr.enh-empty-row td {
+        display: block;
+        padding: 0;
+        border: 0;
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .inventory-page .enh-editor-actions .enh-btn {
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 380px) {
+    .inventory-page .admin-main {
+        padding-inline: 12px;
+    }
+
+    .inventory-page .enh-stats article {
+        padding: 12px 10px;
+    }
+
+    .inventory-page .enh-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .inventory-page .admin-sidebar.is-open .admin-menu {
+        grid-template-columns: 1fr;
+    }
+}

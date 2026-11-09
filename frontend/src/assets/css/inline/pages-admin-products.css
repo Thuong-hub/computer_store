@@ -1,0 +1,24 @@
+        #productStock[readonly] {
+            background: #f4f6f9;
+            color: #374151;
+            cursor: not-allowed;
+        }
+        .product-stock-help {
+            margin: 6px 0 0;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #64748b;
+        }
+        .product-stock-help a {
+            display: inline-block;
+            margin-left: 3px;
+            color: #ed1448;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .product-stock-help a:hover {
+            text-decoration: underline;
+        }
+        .product-stock-help a[hidden] {
+            display: none;
+        }

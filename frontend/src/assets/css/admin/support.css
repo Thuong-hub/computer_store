@@ -1,0 +1,190 @@
+.support-admin-hours {
+    padding: 13px 16px;
+    border-left: 4px solid #e9144c;
+    color: #42516b;
+    background: #fff;
+    border-radius: 8px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.support-admin-layout {
+    display: grid;
+    grid-template-columns: minmax(245px, 320px) minmax(0, 1fr);
+    gap: 18px;
+    min-height: 600px;
+}
+
+.support-admin-inbox,
+.support-admin-detail {
+    background: #fff;
+    border: 1px solid #e5e9f0;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.support-admin-section-head,
+.support-admin-detail-head {
+    min-height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-bottom: 1px solid #e5e9f0;
+}
+
+.support-admin-section-head h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 16px;
+}
+
+.support-admin-section-head button {
+    border: 1px solid #dbe1ea;
+    background: #fff;
+    color: #233958;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.support-admin-customer-list {
+    overflow-y: auto;
+    max-height: 620px;
+}
+
+.support-admin-customer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 15px 16px;
+    background: white;
+    color: #172033;
+    border: 0;
+    border-bottom: 1px solid #eef0f4;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+}
+
+.support-admin-customer:hover,
+.support-admin-customer.active {
+    background: #fff2f5;
+}
+
+.support-admin-customer small {
+    color: #6b7890;
+    font-size: 12px;
+}
+
+.support-admin-customer strong {
+    font-size: 14px;
+}
+
+.support-admin-unread {
+    font-size: 11px;
+    color: #fff;
+    background: #e9144c;
+    border-radius: 15px;
+    padding: 3px 8px;
+    margin-left: 6px;
+}
+
+.support-admin-messages {
+    flex: 1;
+    min-height: 360px;
+    max-height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: #f7f8fb;
+    overflow-y: auto;
+}
+
+.support-admin-bubble {
+    max-width: 80%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    color: #172033;
+    background: #fff;
+    overflow-wrap: anywhere;
+    font-size: 13px;
+}
+
+.support-admin-bubble-admin {
+    align-self: flex-end;
+    background: #172033;
+    color: #fff;
+}
+
+.support-admin-bubble-system {
+    background: #e4eaf2;
+    align-self: center;
+    color: #475569;
+}
+
+.support-admin-bubble p {
+    margin: 0;
+    white-space: pre-wrap;
+    line-height: 1.55;
+}
+
+.support-admin-bubble time {
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    opacity: .68;
+    text-align: right;
+}
+
+.support-admin-error {
+    color: #e9144c;
+    margin: 4px 16px;
+    font-size: 12px;
+}
+
+.support-admin-compose {
+    border-top: 1px solid #e2e8f0;
+    padding: 14px 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.support-admin-compose input {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #d4dae5;
+    border-radius: 9px;
+    padding: 12px;
+    font: inherit;
+}
+
+.support-admin-compose button {
+    border: 0;
+    border-radius: 9px;
+    background: #e9144c;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.support-admin-compose button:disabled {
+    opacity: .5;
+}
+
+@media (max-width: 900px) {
+    .support-admin-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .support-admin-customer-list {
+        max-height: 240px;
+    }
+}

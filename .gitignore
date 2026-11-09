@@ -1,0 +1,18 @@
+# Dependencies & build
+node_modules/
+dist/
+target/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs & env
+*.log
+.env
+
+# Cấu hình cá nhân (chứa mật khẩu / secret) - KHÔNG đưa lên GitHub
+backend/config/application.properties

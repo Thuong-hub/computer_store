@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f6f8;
+    color: #16223a;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.verify-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.verify-card {
+    width: min(100%, 480px);
+    padding: 34px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 14px 40px rgba(18, 35, 63, .12);
+}
+
+.brand {
+    color: #12233f;
+    font-size: 23px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.brand span {
+    color: #e71946;
+}
+
+.verify-icon {
+    margin-top: 28px;
+    font-size: 36px;
+}
+
+.verify-card h1 {
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.verify-card p {
+    margin: 0 0 24px;
+    line-height: 1.6;
+    color: #64748b;
+}
+
+.verify-card label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: 700;
+}
+
+.verify-card input {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #dbe2ea;
+    border-radius: 10px;
+    font: inherit;
+}
+
+.verify-card input:focus {
+    outline: 2px solid rgba(231, 25, 70, .2);
+    border-color: #e71946;
+}
+
+.verify-button,
+.resend-button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 14px;
+    border-radius: 10px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.verify-button {
+    background: #e71946;
+    border: 1px solid #e71946;
+    color: #fff;
+}
+
+.resend-button {
+    background: #fff;
+    border: 1px solid #dbe2ea;
+    color: #16223a;
+}
+
+.verify-button:disabled,
+.resend-button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+#verifyMessage {
+    margin-top: 16px;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+#verifyMessage.success {
+    color: #12824e;
+}
+
+#verifyMessage.error {
+    color: #d92d45;
+}
+
+.login-link {
+    display: block;
+    margin-top: 24px;
+    text-align: center;
+    color: #64748b;
+}
+
+@media(max-width: 540px) {
+    .verify-card {
+        padding: 24px 20px;
+    }
+
+    .verify-card h1 {
+        font-size: 24px;
+    }
+}

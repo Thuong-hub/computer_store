@@ -1,0 +1,459 @@
+.admin-unified-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    body.admin-mobile-unified {
+        font-size: 14px;
+        overflow-x: clip;
+    }
+
+    .admin-mobile-unified .admin-layout {
+        display: block;
+        min-width: 0;
+    }
+
+    .admin-mobile-unified .admin-sidebar {
+        position: relative;
+        height: auto;
+        min-height: 0;
+        padding: 14px 16px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .admin-mobile-unified .admin-logo {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 0;
+        font-size: 17px;
+    }
+
+    .admin-mobile-unified .admin-logo small {
+        margin-top: 3px;
+    }
+
+    .admin-unified-menu-toggle {
+        display: inline-flex;
+        gap: 7px;
+        justify-content: center;
+        align-items: center;
+        padding: 9px 12px;
+        min-height: 41px;
+        border: 1px solid #475569;
+        border-radius: 9px;
+        background: #1f2937;
+        color: #fff;
+        font: inherit;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .admin-unified-menu-toggle:focus-visible {
+        outline: 2px solid #fb7185;
+        outline-offset: 2px;
+    }
+
+    .admin-mobile-unified .admin-sidebar .admin-menu,
+    .admin-mobile-unified .admin-sidebar .admin-sidebar-bottom {
+        display: none;
+        width: 100%;
+    }
+
+    .admin-mobile-unified .admin-sidebar.is-open .admin-menu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5px;
+    }
+
+    .admin-mobile-unified .admin-sidebar.is-open .admin-menu a {
+        min-width: 0;
+        min-height: 42px;
+        padding: 8px;
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .admin-mobile-unified .admin-sidebar.is-open .admin-sidebar-bottom {
+        display: grid;
+        margin: 4px 0 0;
+        gap: 5px;
+    }
+
+    .admin-mobile-unified .admin-main {
+        padding: 18px 14px 36px;
+        min-width: 0;
+    }
+
+    .admin-mobile-unified .admin-header {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .admin-mobile-unified .admin-header h1 {
+        font-size: clamp(22px, 5.8vw, 27px);
+        line-height: 1.22;
+        overflow-wrap: anywhere;
+    }
+
+    .admin-mobile-unified .admin-header > div:first-child > p:last-child {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .admin-mobile-unified .admin-profile {
+        max-width: 100%;
+    }
+
+    .admin-mobile-unified .admin-panel {
+        min-width: 0;
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .admin-mobile-unified .admin-panel h2,
+    .admin-mobile-unified .enh-heading h2 {
+        font-size: 19px;
+        line-height: 1.35;
+    }
+
+    .admin-mobile-unified .section-title-row {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .admin-mobile-unified .admin-order-toolbar,
+    .admin-mobile-unified .admin-user-toolbar,
+    .admin-mobile-unified .admin-promotion-toolbar,
+    .admin-mobile-unified .admin-review-toolbar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+        align-items: stretch;
+    }
+
+    .admin-mobile-unified .order-filter-buttons,
+    .admin-mobile-unified .admin-user-filters,
+    .admin-mobile-unified .admin-promotion-filters,
+    .admin-mobile-unified .admin-review-filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        width: 100%;
+    }
+
+    .admin-mobile-unified .order-filter-buttons button,
+    .admin-mobile-unified .admin-user-filters button,
+    .admin-mobile-unified .admin-promotion-filters button,
+    .admin-mobile-unified .admin-review-filters button {
+        min-height: 37px;
+        max-width: 100%;
+        font-size: 12px;
+        padding: 7px 10px;
+        white-space: normal;
+    }
+
+    .admin-mobile-unified #adminOrderSearch,
+    .admin-mobile-unified #adminUserSearch,
+    .admin-mobile-unified #adminPromotionSearch,
+    .admin-mobile-unified #adminReviewSearch {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        min-height: 42px;
+        font-size: 14px;
+    }
+
+    .admin-mobile-unified .admin-user-search {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .admin-mobile-unified .admin-user-search input {
+        flex: 1 1 0;
+    }
+
+    .admin-mobile-unified .admin-user-search button {
+        min-height: 42px;
+    }
+
+    .admin-mobile-unified .admin-table-wrapper,
+    .admin-mobile-unified .enh-table-wrap {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .admin-mobile-unified .admin-table,
+    .admin-mobile-unified .enh-table {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        border: 0;
+        border-collapse: separate;
+    }
+
+    .admin-mobile-unified .admin-table thead,
+    .admin-mobile-unified .enh-table thead {
+        display: none;
+    }
+
+    .admin-mobile-unified .admin-table tbody,
+    .admin-mobile-unified .enh-table tbody {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .admin-mobile-unified .admin-table tbody tr,
+    .admin-mobile-unified .enh-table tbody tr {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px 12px;
+        padding: 16px;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(15, 23, 42, 0.025);
+    }
+
+    .admin-mobile-unified .admin-table tbody tr:hover,
+    .admin-mobile-unified .enh-table tbody tr:hover {
+        background: #fff;
+    }
+
+    .admin-mobile-unified .admin-table tbody td,
+    .admin-mobile-unified .enh-table tbody td {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5px;
+        width: auto;
+        min-width: 0;
+        max-width: 100%;
+        padding: 0;
+        border: 0;
+        font-size: 13px;
+        line-height: 1.45;
+        text-align: left;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .admin-mobile-unified .admin-table tbody td[data-label]::before,
+    .admin-mobile-unified .enh-table tbody td[data-label]::before {
+        content: attr(data-label);
+        color: #64748b;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        line-height: 1.25;
+    }
+
+    .admin-mobile-unified .admin-table tbody td:first-child,
+    .admin-mobile-unified .enh-table tbody td:first-child {
+        grid-column: 1 / -1;
+        padding-bottom: 11px;
+        border-bottom: 1px solid #eef0f4;
+    }
+
+    .admin-mobile-unified .admin-table tbody td:first-child strong,
+    .admin-mobile-unified .enh-table tbody td:first-child strong {
+        color: #111827;
+        font-size: 15px;
+    }
+
+    .admin-mobile-unified .admin-table tbody td:last-child:not(:first-child),
+    .admin-mobile-unified .enh-table tbody td:last-child:not(:first-child) {
+        grid-column: 1 / -1;
+        padding-top: 11px;
+        border-top: 1px solid #eef0f4;
+    }
+
+    .admin-mobile-unified .admin-table tbody td:last-child button,
+    .admin-mobile-unified .admin-table tbody td:last-child a,
+    .admin-mobile-unified .enh-table tbody td:last-child a {
+        min-height: 38px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .admin-mobile-unified .admin-table tbody tr td[colspan],
+    .admin-mobile-unified .enh-table tbody tr td[colspan] {
+        grid-column: 1 / -1;
+        padding: 16px !important;
+        text-align: center;
+        align-items: center;
+        border: 0;
+    }
+
+    .admin-mobile-unified .admin-order-status,
+    .admin-mobile-unified .admin-role-badge,
+    .admin-mobile-unified .admin-user-status,
+    .admin-mobile-unified .enh-tag {
+        font-size: 11px;
+        white-space: normal;
+        max-width: 100%;
+    }
+
+    .admin-mobile-unified .admin-modal {
+        padding: 12px;
+    }
+
+    .admin-mobile-unified .admin-modal-box {
+        width: 100%;
+        max-height: calc(100dvh - 24px);
+        padding: 18px 16px;
+    }
+
+    .admin-mobile-unified .admin-modal-header h2 {
+        font-size: 20px;
+    }
+
+    .admin-mobile-unified .admin-modal-actions {
+        position: sticky;
+        bottom: -18px;
+        z-index: 2;
+        margin-top: 16px;
+        padding: 12px 0;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .admin-mobile-unified .admin-modal-actions button {
+        flex: 1 1 120px;
+        min-height: 42px;
+    }
+
+    .admin-mobile-unified .enh-heading,
+    .admin-mobile-unified .enh-controls {
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .admin-mobile-unified .enh-filter {
+        gap: 12px;
+    }
+
+    .admin-mobile-unified .enh-filter input,
+    .admin-mobile-unified .enh-filter select,
+    .admin-mobile-unified .enh-filter button {
+        width: 100%;
+        min-height: 42px;
+        font-size: 14px;
+    }
+
+    .admin-mobile-unified .enh-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .admin-mobile-unified .enh-stats article {
+        min-width: 0;
+        padding: 14px;
+        gap: 6px;
+    }
+
+    .admin-mobile-unified .enh-stats article span {
+        font-size: 12px;
+    }
+
+    .admin-mobile-unified .enh-stats article strong {
+        font-size: clamp(16px, 4vw, 21px);
+        overflow-wrap: anywhere;
+    }
+
+    .admin-mobile-unified .enh-status-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .admin-mobile-unified .enh-status-grid article {
+        min-width: 0;
+        padding: 12px;
+    }
+
+    .admin-mobile-unified .enh-chart {
+        gap: 14px;
+        min-height: 230px;
+        overflow-x: auto;
+        padding: 8px 0 16px;
+    }
+
+    .admin-mobile-unified .enh-bar-col {
+        flex: 0 0 94px;
+        max-width: 94px;
+        min-width: 94px;
+        font-size: 10px;
+    }
+
+    .admin-mobile-unified .enh-bar-col span {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        line-height: 1.25;
+    }
+
+    .admin-mobile-unified .enh-bar-area {
+        height: 146px;
+    }
+
+    .admin-mobile-unified .admin-order-detail-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .admin-mobile-unified .admin-detail-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .admin-mobile-unified .admin-order-item {
+        grid-template-columns: 55px minmax(0, 1fr);
+        gap: 9px;
+    }
+
+    .admin-mobile-unified .admin-order-item > * {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .admin-mobile-unified .quick-action-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .admin-mobile-unified .quick-action-grid > * {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 365px) {
+    .admin-mobile-unified .admin-table tbody tr,
+    .admin-mobile-unified .enh-table tbody tr {
+        padding: 13px;
+        gap: 11px;
+    }
+
+    .admin-mobile-unified .admin-panel {
+        padding: 13px;
+    }
+
+    .admin-mobile-unified .enh-stats {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .admin-mobile-unified .admin-user-search {
+        flex-wrap: wrap;
+    }
+
+    .admin-mobile-unified .admin-user-search button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,129 @@
+.invoice-request-panel {
+    margin-bottom: 24px;
+}
+
+.invoice-request-heading {
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.invoice-request-description {
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.invoice-request-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 20px 0 12px;
+}
+
+.invoice-request-filters,
+.invoice-request-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.invoice-request-filter,
+.invoice-request-refresh,
+.invoice-request-print,
+.invoice-request-complete {
+    border-radius: 9px;
+    padding: 9px 12px;
+    border: 1px solid #dbe1e9;
+    color: #17233a;
+    background: #fff;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.invoice-request-filter.active {
+    border-color: #ed174c;
+    background: #fff0f4;
+    color: #d61443;
+}
+
+.invoice-request-refresh {
+    background: #f1f5f9;
+}
+
+.invoice-request-print {
+    border-color: #ed174c;
+    background: #ed174c;
+    color: #fff;
+}
+
+.invoice-request-complete {
+    border-color: #cbd5e1;
+    background: #f8fafc;
+}
+
+.invoice-request-complete:disabled {
+    opacity: .6;
+    cursor: wait;
+}
+
+.invoice-request-status {
+    display: inline-block;
+    padding: 6px 9px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.invoice-request-status.pending {
+    background: #fff7ed;
+    color: #b45309;
+}
+
+.invoice-request-status.processed {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.invoice-request-done {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.invoice-request-message {
+    min-height: 18px;
+    margin-bottom: 8px;
+    color: #047857;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.invoice-request-message.error {
+    color: #b91c1c;
+}
+
+.invoice-request-table-wrapper {
+    overflow-x: auto;
+}
+
+.invoice-request-table {
+    min-width: 780px;
+}
+
+@media (max-width: 768px) {
+    .invoice-request-heading {
+        flex-direction: column;
+    }
+    .invoice-request-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .invoice-request-refresh {
+        align-self: flex-start;
+    }
+}

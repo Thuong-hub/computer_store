@@ -1,0 +1,16 @@
+# Copy file này thành "application.properties" (cùng thư mục) rồi điền thông tin của bạn.
+# File application.properties đã được .gitignore nên sẽ không bị đưa lên GitHub.
+# Spring Boot tự nạp backend/config/application.properties khi chạy từ thư mục backend/.
+
+# --- Gửi email (xác minh tài khoản, quên mật khẩu, đổi email) ---
+SMTP_USER=your-email@gmail.com
+# Mật khẩu ứng dụng 16 ký tự của Gmail (không phải mật khẩu đăng nhập)
+SMTP_PASSWORD=your-16-char-app-password
+
+# --- Thanh toán chuyển khoản SePay (tùy chọn) ---
+sepay.bank.account=0123456789
+sepay.webhook.secret=
+sepay.webhook.api-key=
+
+# --- Khóa ký JWT (nên đổi khi triển khai thật) ---
+# jwt.secret=<chuỗi base64 từ 32 byte trở lên>
